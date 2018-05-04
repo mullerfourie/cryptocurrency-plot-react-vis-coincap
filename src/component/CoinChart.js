@@ -14,16 +14,6 @@ import { getCoinLive } from '../api/CoinCapAPI';
 import styles from '../styles/general';
 
 class CoinChart extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      trade: {},
-      coinPrice: [{x: 0, y: 0}],
-    };
-    this.tickerAmount = 1;
-  }
-
   render() {
     return (
       <div>

@@ -24,7 +24,7 @@ class App extends Component {
     this.getCoinDayHistory();
   }
 
-  async getCoinDayHistory() {
+  getCoinDayHistory() {
     axios.get(`http://coincap.io/history/BTC`).then((response) => {
       const { data: { price = [] } } = response;
       const array = [];
