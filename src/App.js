@@ -5,10 +5,10 @@ import _ from 'underscore';
 import logo from './logo.svg';
 import './App.css';
 import '../node_modules/react-vis/dist/style.css'; // chart styling (react-vis)
-
 import styles from './styles/general';
 import CoinChart from './component/CoinChart';
-import { fetchLiveTradesTimer } from './api/CoinCapAPI';
+
+const COIN_CAP_URL = 'http://coincap.io';
 
 class App extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   getCoinDayHistory() {
-    axios.get(`http://coincap.io/history/BTC`).then((response) => {
+    axios.get(`${COIN_CAP_URL}/history/BTC`).then((response) => {
       const { data: { price = [] } } = response;
       const array = [];
       _.each(price, (tick) => {

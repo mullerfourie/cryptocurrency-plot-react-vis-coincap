@@ -5,7 +5,7 @@ Very basic application to plot historical data from CoinCap API
 <img src="/plot.png" height="500" />
 
 ## Getting Started
-* Make sure the API URL matches CoinCap (https://github.com/CoinCapDev/CoinCap.io) in the ```/api/CoinCapAPI.js``` file.
+* Make sure the API URL matches CoinCap (https://github.com/CoinCapDev/CoinCap.io) in the ```App.js``` file.
 To run the app ```yarn start``` after doing a ```yarn install```.
 
 More can be found at [Create React App](https://github.com/facebookincubator/create-react-app).

@@ -9,7 +9,6 @@ import {
   linearGradient,
   AreaSeries,
   LineSeries } from 'react-vis';
-import { getCoinLive } from '../api/CoinCapAPI';
 
 import styles from '../styles/general';
 
